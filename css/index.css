@@ -375,10 +375,30 @@ h5:hover{
     position: center;
     margin-top: -4em;
   }
+  .logoimg{
+    position: center;
+    margin-top: -4em; 
+  }
+   .flex-services{
+    display: flex;
+    flex-direction: column;
+  }
   .flex-container{
     display: flex;
     flex-direction: column;
   }
+  .paragraphs{
+    height: 20%;
+    width: 90%;
+}
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+ }
   .text1{
     vertical-align: center;
     padding-left: 50px;
@@ -392,9 +412,18 @@ h5:hover{
   }
 }
 @media screen and (max-width: 500px) {
-    .logo{
+      .logo{
         position: center;
         margin-top: -15em;
+      }
+      .logoimg{
+        position: center;
+        margin-top: -5em;
+        float: top;
+      }
+      .flex-services{
+        display: flex;
+        flex-direction: column;
       }
       .flex-container{
         display: flex;
@@ -407,11 +436,27 @@ h5:hover{
         height: 15%;
         width: 100%;
         font-size: 20px;
-        padding: 5px 100px 5px 100px;
+        padding: 5px 150px 5px 150px;
+      }
+      .flex-services nav a{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightgray;
+        height: 15%;
+        width: 100%;
+        font-size: 20px;
+        padding: 5px 150px 5px 150px; 
+      }
+      .flex-services nav a:hover{
+        background: blue;
+        color: white;   
       }
       .flex-container nav a:hover{
         background: blue;
         color: white;
+      }
+      .paragraphs{
+          width: 80%;
       }
       .text1{
         font-size: 44px;
@@ -448,6 +493,9 @@ h5:hover{
      .middle-image{
          height: 90px;
     
+     }
+     .services-info-img{
+         display: none;
      }
      .bottom-content{
         padding: 10px;
